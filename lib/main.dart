@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:latihan2_zahra/page1.dart';
+import 'package:latihan2_zahra/page2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +33,12 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+   
+                routes: {
+                  '/': (context) => page1(),
+                  '/Page2': (context) => Page2()
+                },
+                initialRoute: '/',
     );
   }
 }
